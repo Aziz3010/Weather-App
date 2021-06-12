@@ -58,6 +58,8 @@ body {
 }
 
 /* ---------- links side ---------- */
+
+
 #linkNav a{
 	text-decoration: none;
 	color: var(--textMainColor);
@@ -122,7 +124,6 @@ body {
 	#linkNav{
 		margin-top: 1.5rem;
 		background-color: var(--secondColor);
-		display: flex;
 		justify-items: center;
 		align-items: center;
 		flex-direction: column;
@@ -264,7 +265,7 @@ body {
 	padding: .5rem 1rem;
 	border-radius: 15px 0px 0px 0px;
 	background-color: var(--firstColor);
-	margin-bottom: 1rem;
+	margin-bottom: 2rem;
 }
 
 .currentData p{
@@ -280,6 +281,7 @@ body {
 
 #cityName{
 	color: var(--textMutedColor);
+	margin-bottom: 1rem;
 }
 
 .degreeDiv{
@@ -287,15 +289,16 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	margin-bottom: 1rem;
 }
 
-.degreeDiv #deg{
+.degreeDiv #deg1{
 	font-size: 40px;
 	font-weight: 600;
 	color: var(--textMainColor);
 }
 
-.degreeDiv #icon{
+.degreeDiv #icon1{
 	font-size: 40px;
 	color: var(--textMainColor);
 }
@@ -358,17 +361,25 @@ body {
 }
 
 .degreeDiv2 #deg2{
-	font-size: 40px;
+	font-size: 35px;
 	font-weight: 600;
 	color: var(--textMainColor);
+	/* background-color: chartreuse; */
+	line-height: normal;
 }
 
 .degreeDiv2 #icon2{
 	font-size: 40px;
 	/* background-color: yellow; */
-	line-height: 36px;
+	line-height: 31px;
 	color: var(--textMainColor);
 }
+.degreeDiv2 #deg2-s{
+	/* background-color: chartreuse; */
+	color: var(--textMainColor);
+
+}
+/* ///////////////////////////////////////////// */
 
 #weatherStatus2{
 	color: var(--logoColor);
@@ -431,15 +442,21 @@ body {
 }
 
 .degreeDiv3 #deg3{
-	font-size: 40px;
+	font-size: 35px;
 	font-weight: 600;
+	color: var(--textMainColor);
+	/* background-color: chartreuse; */
+	line-height: normal;
+}
+
+.degreeDiv3 #deg3-s{
 	color: var(--textMainColor);
 }
 
 .degreeDiv3 #icon3{
 	font-size: 40px;
 	/* background-color: yellow; */
-	line-height: 36px;
+	line-height: 31px;
 	color: var(--textMainColor);
 }
 
