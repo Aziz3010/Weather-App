@@ -1,0 +1,234 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+        <title>Weather App</title>
+
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Navbar -->
+        <section id="Navbar">
+            <div class="Navbar">
+                <div class="container">
+                    <!-- logo side -->
+                    <div id="logo">
+                        <a href="#home">
+                            <!-- image -->
+                            <div class="logoImg">
+                                <img src="./img/logo.png" alt="WeatherCloud">
+                            </div>
+                            <!-- text -->
+                            <div class="logoText">
+                            <p>Weather<br/><h6>tagline goes here</h6></p>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- menu button -->
+                    <div id="menuBtn" class="menuBtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <!-- links side -->
+                    <div id="linkNav">
+                        <a class="actv" href="#Home">Home</a>
+                        <a href="#About">About</a>
+                        <a href="#Contact">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Home -->
+        <section id="Home">
+            <div class="container">
+                <!-- Search Input -->
+                <div id="search">
+                    <input id="searchInput" type="text" placeholder="Find your location..">
+                    <button id="searchBtn">Find</button>
+                </div>
+                <!-- weather screen -->
+                <div class="weatherScreen">
+                        <!-- 1 -->
+                        <div class="box p-0">
+                            <div class="item">
+                                
+                                <!-- day & date -->
+                                <div class="currentData">
+                                    <p id="currentday">Friday</p>
+                                    <p id="currentdate">11jun</p>
+                                </div>
+
+                                <!-- box info -->
+                                <div class="info">
+                                    <!-- city -->
+                                    <h4 id="cityName">cairo</h4>
+                                    <!-- degree -->
+                                    <div class="degreeDiv">
+                                        <span id="deg" >35</span>
+                                        <span id="icon" >*</span>
+                                    </div>
+                                    <!-- weather status -->
+                                    <p id="weatherStatus">clear</p>
+                                </div>
+
+                                <!-- box wind -->
+                                <div class="windInfoDiv">
+                                    <!-- wind -->
+                                    <div class="wind">
+                                        <i class="fas fa-wind"></i>
+                                        <span id="windIcn">20%</span>
+                                    </div>
+                                    <!-- umberella -->
+                                    <div class="umberella">
+                                        <i class="fas fa-umbrella-beach"></i>
+                                        <span id="umberellaIcn">18km/h</span>
+                                    </div>
+                                    <!-- compass -->
+                                    <div class="compass">
+                                        <i class="far fa-compass"></i>
+                                        <span id="compassIcn">East</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- 2 -->
+                        <div class="box p-0">
+                            <div class="item2">
+                                
+                                <!-- day & date -->
+                                <div class="currentData2">
+                                    <p id="currentday">Friday</p>
+                                </div>
+
+                                <!-- box info -->
+                                <div class="info2">
+                                    <!-- degree -->
+                                    <div class="degreeDiv2">
+                                        <span id="icon2" >*</span>
+                                        <span id="deg2" >35</span>
+                                    </div>
+                                    <!-- weather status -->
+                                    <p id="weatherStatus2">clear</p>
+                                </div>
+
+                                <!-- box wind -->
+                                <div class="windInfoDiv2">
+                                    <!-- wind -->
+                                    <div class="wind">
+                                        <i class="fas fa-wind"></i>
+                                        <span id="windIcn">20%</span>
+                                    </div>
+                                    <!-- umberella -->
+                                    <div class="umberella">
+                                        <i class="fas fa-umbrella-beach"></i>
+                                        <span id="umberellaIcn">18km/h</span>
+                                    </div>
+                                    <!-- compass -->
+                                    <div class="compass">
+                                        <i class="far fa-compass"></i>
+                                        <span id="compassIcn">East</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- 3 -->
+                        <div class="box p-0">
+                            <div class="item3">
+                                
+                                <!-- day & date -->
+                                <div class="currentData3">
+                                    <p id="currentday">Friday</p>
+                                </div>
+
+                                <!-- box info -->
+                                <div class="info3">
+                                    <!-- degree -->
+                                    <div class="degreeDiv3">
+                                        <span id="icon3" >*</span>
+                                        <span id="deg3" >35</span>
+                                    </div>
+                                    <!-- weather status -->
+                                    <p id="weatherStatus3">clear</p>
+                                </div>
+
+                                <!-- box wind -->
+                                <div class="windInfoDiv3">
+                                    <!-- wind -->
+                                    <div class="wind">
+                                        <i class="fas fa-wind"></i>
+                                        <span id="windIcn">20%</span>
+                                    </div>
+                                    <!-- umberella -->
+                                    <div class="umberella">
+                                        <i class="fas fa-umbrella-beach"></i>
+                                        <span id="umberellaIcn">18km/h</span>
+                                    </div>
+                                    <!-- compass -->
+                                    <div class="compass">
+                                        <i class="far fa-compass"></i>
+                                        <span id="compassIcn">East</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <section id="Footer">
+            <div class="container">
+                <div class="row">
+                    <!-- Subscribe Input -->
+                    <div id="Subscribe">
+                        <input id="SubscribeInput" type="text" placeholder="Enter email to Subscribe..">
+                        <button id="SubscribeBtn">Subscribe</button>
+                    </div>
+                    <!-- Social -->
+                    <div class="Social">
+                        <!-- facebook -->
+                        <div class="socialIcon">
+                            <a href="https://www.facebook.com/" target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </div>
+                        <!-- twitter -->
+                        <div class="socialIcon">
+                            <a href="https://twitter.com/?lang=en" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                        <!-- G+ -->
+                        <div class="socialIcon">
+                            <a href="https://myaccount.google.com/" target="_blank">
+                                <i class="fab fa-google-plus-g"></i>
+                            </a>
+                        </div>
+                        <!-- pinterest -->
+                        <div class="socialIcon">
+                            <a href="https://www.pinterest.com/" target="_blank">
+                                <i class="fab fa-pinterest"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <p class="copyRight">Copyright 2021 Company name. Made by Ahmed Abdel-Aziz. All rights reserved</p>
+            </div>
+        </section>
+
+        
+        <script src="js/jquery-3.6.0.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

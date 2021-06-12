@@ -1,0 +1,685 @@
+/* ************* General ************* */
+:root{
+	--bgColor:#1e202b;
+	--logoColor:#12b7de;
+	--firstColor:#323544;
+	--secondColor:#262936;
+	--thirdColor:#8e8f94;
+	--textMainColor:#fff;
+	--textMutedColor:#97b8c8;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+	background-color: var(--bgColor);
+}
+
+/* ************* Navbar ************* */
+.Navbar{
+	background-color: var(--bgColor);
+	height: 8rem;
+}
+/* ---------- logo side ---------- */
+#logo a{
+	padding: .2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+
+#logo a .logoImg{
+	margin-right: .7rem;
+}
+
+#logo a .logoText{
+	line-height: 1.2rem;
+}
+
+.logoText p{
+	color: var(--textMainColor);
+	margin: 0;
+	font-size: 1.3rem;
+	font-weight: 600;
+}
+
+.logoText h6{
+	color: var(--textMutedColor);
+	font-size: .8rem;
+	font-weight: 400;
+	margin: 0;
+	margin-top: .4rem;
+}
+
+/* ---------- links side ---------- */
+#linkNav a{
+	text-decoration: none;
+	color: var(--textMainColor);
+	border: 2px solid transparent;
+	padding: .3rem 1.5rem;
+	border-radius: 1.5rem;
+	font-weight: 500;
+	margin-right: 2rem;
+	transition: color 500ms;
+}
+
+#linkNav a:last-child{
+	margin-right: 0;
+}
+
+.actv{
+	color: var(--logoColor)!important;
+	border: 2px solid var(--logoColor) !important;
+}
+
+#linkNav a:hover{
+	color: var(--logoColor);
+	border: 2px solid var(--logoColor);
+
+}
+/* ---------- menu button ---------- */
+.menuBtn{
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 1.2rem .8rem;
+	border: 2px solid transparent;
+	border-radius: 25px;
+	cursor: pointer;
+	transition: border 100ms;
+}
+
+.menuBtn span{
+	width: 1rem;
+	height: .1rem;
+	background-color: var(--textMainColor);
+	margin-bottom: .2rem;
+	transition: color 500ms;
+}
+.menuBtn span:last-child{
+	margin-bottom: 0rem;
+}
+
+.menuBtn:hover{
+	border: 2px solid var(--logoColor);
+}
+.menuBtn:hover.menuBtn span{
+	background-color: var(--logoColor);
+}
+
+@media screen and (max-width:991px){
+	.Navbar{
+		height: fit-content !important;
+	}
+
+	#linkNav{
+		margin-top: 1.5rem;
+		background-color: var(--secondColor);
+		display: flex;
+		justify-items: center;
+		align-items: center;
+		flex-direction: column;
+		width: 100%;
+		border-radius: 20px;
+		display: none;
+	}
+	
+	#linkNav a{
+		margin: 0;
+		padding: 1rem 0rem;
+		border: none !important;
+		width: 100%;
+		text-align: center;
+		border-bottom: .5px solid var(--textMutedColor) !important;
+		border-radius: 0;
+	}	
+
+	#linkNav a:last-child{
+		border: none !important;
+	}
+	
+	.menuBtn{
+		display: flex;
+	}
+
+}
+
+@media screen and (max-width:280px){
+	.Navbar{
+		height: fit-content !important;
+	}
+
+	.container{
+		display: flex !important;
+		justify-content: center !important;
+		align-items: center !important;
+		flex-direction: column !important;
+		padding: .3rem 0rem !important;
+	}
+	
+	#logo{
+		margin-bottom: .5rem;
+	}
+
+	#logo a{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column !important;
+	}
+
+	#logo a .logoImg{
+		text-align: center;
+		margin: 0rem 0rem .5rem  0rem;
+		padding: 0;
+	}
+
+	#logo a .logoText{
+		text-align: center;
+		margin: 0;
+		padding: 0;
+	}
+}
+
+/* ************* Home ************* */
+
+#Home{
+	background-image: url(../img/banner.png);
+	background-repeat: no-repeat;
+	padding: 5rem 0;
+}
+
+/* ---------- search button ---------- */
+
+.container #search{
+	background-color: var(--bgColor);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 3.125rem;
+	border-radius: 5rem;
+	position: relative;
+	margin-bottom: 5rem;
+}
+
+#search #searchInput{
+	background-color: transparent;
+	width: 99%;
+	font-size: 1rem;
+	padding: .5rem 0rem;
+	padding-left: 1rem;
+	border-radius: 40px;
+	outline: none;
+	border: none;
+	color: var(--textMutedColor);
+}
+
+#searchInput:focus{
+	outline: none;
+	border: none;
+}
+
+#search #searchBtn{
+	background-color: var(--logoColor);
+	color: var(--textMainColor);
+	padding: .5rem 2rem;
+	border-radius: 40px;
+	border: none;
+	outline: none;
+	position: absolute;
+	right: 5px ;
+}
+
+/* ---------- weather screen ---------- */
+.weatherScreen{
+	/* background-color: yellowgreen; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.box{
+	width: calc(100%/3);
+}
+
+/* ---------- cards ---------- */
+.item{
+	background-color: var(--secondColor);
+	border-radius: 15px 0px 0px 15px;
+	width: 100%;
+}
+
+.currentData{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: .5rem 1rem;
+	border-radius: 15px 0px 0px 0px;
+	background-color: var(--firstColor);
+	margin-bottom: 1rem;
+}
+
+.currentData p{
+	padding: 0;
+	margin: 0;
+	color: var(--textMutedColor);
+}
+
+.info{
+	padding: 0rem 1rem;
+	background-color: var(--secondColor);
+}
+
+#cityName{
+	color: var(--textMutedColor);
+}
+
+.degreeDiv{
+	/* background-color: tomato; */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.degreeDiv #deg{
+	font-size: 40px;
+	font-weight: 600;
+	color: var(--textMainColor);
+}
+
+.degreeDiv #icon{
+	font-size: 40px;
+	color: var(--textMainColor);
+}
+
+#weatherStatus{
+	color: var(--logoColor);
+	margin-top: 10px;
+}
+
+.windInfoDiv{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+	border-radius: 0px 0px 0px 15px;
+	background-color:var(--secondColor);
+}
+
+.windInfoDiv i{
+	color: var(--thirdColor);
+	font-size: 1.1rem;
+}
+
+.windInfoDiv span{
+	color: var(--thirdColor);
+}
+
+/* //////////// 2 ///////////// */
+
+.item2{
+	width: 100%;
+	background-color: var(--firstColor);
+}
+
+.currentData2{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: .5rem;
+	background-color: var(--secondColor);
+	margin-bottom: 1rem;
+}
+
+.currentData2 p{
+	padding: 0;
+	margin: 0;
+	color: var(--textMutedColor);
+}
+
+.info2{
+	padding: 0rem 1rem;
+}
+
+.degreeDiv2{
+	/* background-color: tomato; */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+}
+
+.degreeDiv2 #deg2{
+	font-size: 40px;
+	font-weight: 600;
+	color: var(--textMainColor);
+}
+
+.degreeDiv2 #icon2{
+	font-size: 40px;
+	/* background-color: yellow; */
+	line-height: 36px;
+	color: var(--textMainColor);
+}
+
+#weatherStatus2{
+	color: var(--logoColor);
+	margin-top: 10px;
+	text-align: center;
+}
+
+.windInfoDiv2{
+	/* background-color: yellow; */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+}
+
+.windInfoDiv2 i{
+	color: var(--thirdColor);
+	font-size: 1.1rem;
+}
+
+.windInfoDiv2 span{
+	color: var(--thirdColor);
+}
+
+/* ////////////// 3 ////////////// */
+.item3{
+	width: 100%;
+	border-radius: 0px 15px 15px 0px;
+	background-color: var(--secondColor);
+}
+
+.currentData3{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: .5rem;
+	background-color: var(--firstColor);
+	margin-bottom: 1rem;
+	border-radius: 0px 15px 0px 0px;
+
+}
+
+.currentData3 p{
+	padding: 0;
+	margin: 0;
+	color: var(--textMutedColor);
+}
+
+.info3{
+	padding: 0rem 1rem;
+	/* background-color: var(--firstColor); */
+}
+
+.degreeDiv3{
+	/* background-color: tomato; */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+}
+
+.degreeDiv3 #deg3{
+	font-size: 40px;
+	font-weight: 600;
+	color: var(--textMainColor);
+}
+
+.degreeDiv3 #icon3{
+	font-size: 40px;
+	/* background-color: yellow; */
+	line-height: 36px;
+	color: var(--textMainColor);
+}
+
+#weatherStatus3{
+	color: var(--logoColor);
+	margin-top: 10px;
+	text-align: center;
+}
+
+.windInfoDiv3{
+	/* background-color: yellow; */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+	border-radius: 0px 0px 15px 0px;
+}
+
+.windInfoDiv3 i{
+	color: var(--thirdColor);
+	font-size: 1.1rem;
+}
+
+.windInfoDiv3 span{
+	color: var(--thirdColor);
+}
+/* /////////// media //////////// */
+
+@media screen and (max-width:991px){
+	.weatherScreen{
+		flex-wrap: wrap;
+		flex-direction: row;
+	}
+
+	.box{
+		width: calc(100%/2);
+		margin-bottom: 1rem;
+	}
+	.currentData,.currentData3,.windInfoDiv,.windInfoDiv3{
+		border-radius: 0;
+	}
+	.item,.item3{
+		border-radius: 0;
+	}
+}
+
+@media screen and (max-width:767px){
+	.weatherScreen{
+		flex-direction: column;
+	}
+
+	.box{
+		width: 100%;
+	}
+}
+/* ---------- Footer ---------- */
+#Footer{
+	background-color: var(--firstColor);
+	padding: 3rem 0rem;
+}
+
+/* ----- Subscribe button ----- */
+
+
+@media screen and (max-width:767px){
+	#Footer .container .row{
+		flex-direction: column;
+	}
+	.Social{
+		margin-top: .5rem;
+	}
+	.copyRight{
+		text-align: center;
+	}
+}
+
+.container #Subscribe{
+	background-color: var(--bgColor);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 3.125rem;
+	border-radius: 5rem;
+	position: relative;
+	flex-grow: 2;
+}
+
+#Subscribe #SubscribeInput{
+	background-color: transparent;
+	width: 99%;
+	font-size: 1rem;
+	padding: .5rem 0rem;
+	padding-left: .6rem;
+	border-radius: 40px;
+	outline: none;
+	border: none;
+	color: var(--textMutedColor);
+}
+
+#SubscribeInput:focus{
+	outline: none;
+	border: none;
+}
+
+#Subscribe #SubscribeBtn{
+	background-color: var(--logoColor);
+	color: var(--textMainColor);
+	padding: .5rem 2rem;
+	border-radius: 40px;
+	border: none;
+	outline: none;
+	position: absolute;
+	right: 5px ;
+}
+
+/* ----- Social ----- */
+.Social{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-grow: 1;
+}
+
+.socialIcon{
+	background-color: var(--secondColor);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 3.125rem;
+	height: 3.125rem;
+	border-radius: 50%;
+	margin-right: .5rem;
+	font-size: 1.2rem;
+	cursor: pointer;
+	transition: background-color 300ms;
+}
+
+.Social .socialIcon:last-child{
+	margin-right: 0rem;
+}
+
+.socialIcon:hover{
+	background-color: var(--logoColor);
+}
+
+.socialIcon a{
+	transition: color 300ms;
+	text-decoration: none;
+	color: var(--logoColor);
+}
+
+.socialIcon a:hover{
+	text-decoration: none;
+	color: var(--textMainColor);
+}
+
+.socialIcon:hover a{
+	color: var(--textMainColor);
+}
+
+.copyRight{
+	color: var(--textMutedColor);
+	margin: 0;
+	text-align: center;
+	margin-top: 1rem;
+	padding: 0 .5rem;
+}
+
+@media screen and (max-width:280px){
+	#Footer .container .row{
+		padding: .5rem 0rem;
+		justify-content: center;
+		align-items: center;
+		
+	}
+
+	.Social{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 1rem;
+	}
+	
+	.socialIcon{
+		margin: 0;
+		width: 35px;
+		height: 35px;
+		margin-right: .5rem;
+	}
+	.Social .socialIcon:last-child{
+		margin-right: 0rem;
+	}
+
+	.container #Subscribe{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		height: fit-content;
+		border-radius: 0;
+		background-color: transparent;
+	}
+	
+	#Subscribe #SubscribeInput{
+		background-color: var(--bgColor);	
+		margin-bottom: .5rem;
+		font-size: 1rem;
+		width: 130%;
+	}
+	
+	#Subscribe #SubscribeBtn{
+		padding: .4rem 2rem;
+		position: static;
+		margin: auto;
+		margin-bottom: 2rem;
+		
+	}
+
+	.container #search{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		height: fit-content;
+		border-radius: 0;
+		background-color: transparent;
+	}
+
+	#search #searchInput{
+		background-color: var(--bgColor);
+		margin-bottom: .5rem;
+		font-size: 1rem;
+		width: 130%;
+	}
+
+	#search #searchBtn{
+		padding: .4rem 2rem;
+		position: static;
+		margin: auto;
+		margin-bottom: 1.5rem;
+		
+	}
+}
